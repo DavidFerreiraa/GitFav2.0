@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "name": "gitfav2.0",
+  "version": "1.0.0",
+  "description": "Project to Rocketseat explorer",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidFerreiraa/GitFav2.0.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidFerreiraa/GitFav2.0/issues"
+  },
+  "homepage": "https://github.com/DavidFerreiraa/GitFav2.0#readme"
+}
