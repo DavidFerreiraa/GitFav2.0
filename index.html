@@ -6,6 +6,41 @@
     <title>GitFav2.0</title>
 </head>
 <body>
-    
+    <div id="app">
+        <header>
+            <img src="./assets/Gitfav.svg" alt="logo image"/>
+            <div class="search-wrapper">
+                <label class="sr-only" for="username">Digite o Github username que quer favoritar</label>
+                <input placeholder="Digite o Github username que quer favoritar" type="text" name="username" id="username"/>
+                <button><img src="./assets/star.svg" alt="Imagem de estrela"/><span>Favoritar</span></button>
+            </div>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Repositórios</th>
+                    <th>Seguidores</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="https://github.com/davidferreiraa.png" alt="Imagem de David"/>
+                        <a href="https://github.com/davidferreiraa">
+                            <p>David ferreira Lima</p>
+                            <span>/davidferreiraa</span>
+                        </a>
+                    </td>
+                    <td>123</td>
+                    <td>1234</td>
+                    <td>
+                        <button>Remover</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
