@@ -12,20 +12,37 @@
 
 html, body, input, button {
     font-family: "Roboto", sans-serif;
+
+    --bg-body-color: hsl(0, 0%, 0%);
+    --bg-td-odd: hsla(194, 64%, 6%, 0.5);
+    --bg-td-even: hsl(191, 31%, 42%);
+    --bg-btn-color: hsl(195, 91%, 25%);
+    --bg-thead-color: hsl(194, 72%, 13%);
+    --bg-input-color: hsl(191, 65%, 7%);
+    
+    --tt-btn-color: hsl(0, 0%, 100%);
+    --tt-rmv-color: hsl(355, 91%, 66%);
+    --tt-color: hsl(240, 9%, 89%);
+    --tt-ph-color: hsl(240, 6%, 51%);
 }
 
 body {
     font-size: 1.6rem;
 
-    --bg-page-color: hsl(240, 4%, 19%);
-    --bg-btn-color: hsl(195, 91%, 25%);
-    --bg-thead-color: hsl(194, 72%, 13%);
-    --bg-input-color: hsl(191, 65%, 7%);
+    background-color: var(--bg-page-color);
 
-    --tt-btn-color: hsl(0, 0%, 100%);
-    --tt-rmv-color: hsl(355, 91%, 66%);
-    --tt-color: hsl(240, 9%, 89%);
-    --tt-ph-color: hsl(240, 6%, 51%);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    max-width: 11.2rem;
+}
+
+.search-wrapper {
+    display: flex;
 }
 
 .sr-only {
