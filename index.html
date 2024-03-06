@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script type="module" src="./js/index.js" defer></script>
     <title>GitFav2.0</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
             <div class="search-wrapper">
                 <label class="sr-only" for="username">Digite o Github username que quer favoritar</label>
                 <input placeholder="Digite o Github username que quer favoritar" type="text" name="username" id="username"/>
-                <button><img src="./assets/star.svg" alt="Imagem de estrela"/><span>Favoritar</span></button>
+                <button class="add"><img src="./assets/star.svg" alt="Imagem de estrela"/><span>Favoritar</span></button>
             </div>
         </header>
         <table>
@@ -26,34 +27,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td class="user">
-                        <img src="https://github.com/davidferreiraa.png" alt="Imagem de David"/>
-                        <a href="https://github.com/davidferreiraa">
-                            <p>David ferreira Lima</p>
-                            <span>/davidferreiraa</span>
-                        </a>
-                    </td>
-                    <td><p>123</p></td>
-                    <td><p>1234</p></td>
-                    <td>
-                        <button class="remove">Remover</button>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="user">
-                        <img src="https://github.com/davidferreiraa.png" alt="Imagem de David"/>
-                        <a href="https://github.com/davidferreiraa">
-                            <p>David ferreira Lima</p>
-                            <span>/davidferreiraa</span>
-                        </a>
-                    </td>
-                    <td><p>123</p></td>
-                    <td><p>1234</p></td>
-                    <td>
-                        <button class="remove">Remover</button>
-                    </td>
-                </tr>
+                
             </tbody>
         </table>
     </div>
