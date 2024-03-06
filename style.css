@@ -19,6 +19,8 @@ html, body, input, button {
     --bg-btn-color: hsl(195, 91%, 25%);
     --bg-thead-color: hsl(194, 72%, 13%);
     --bg-input-color: hsl(191, 65%, 7%);
+
+    --bd-table: hsl(191, 31%, 42%);
     
     --tt-btn-color: hsl(0, 0%, 100%);
     --tt-rmv-color: hsl(355, 91%, 66%);
@@ -71,6 +73,82 @@ header {
 
     border: none;
     border-radius: .5rem;
+}
+
+table {
+    width: 100%;
+
+    margin-top: 8.7rem;
+
+    border: 1px solid var(--bd-table);
+    border-collapse: collapse;
+
+    overflow: hidden;
+}
+
+table thead {
+    background-color: var(--bg-thead-color);
+
+    color: var(--tt-color);
+    text-align: left;
+}
+
+table thead * {
+    padding: 1.6rem 0rem;
+}
+
+table tr:first-child th:first-child {
+    border-top-left-radius: .4rem;
+    padding-left: 4rem;
+}
+
+table tr:first-child th:last-child {
+    border-top-right-radius: .4rem;
+    padding-right: 4rem;
+}
+
+table tr:last-child td:last-child{
+    border-bottom-right-radius: .4rem;
+}
+
+table tr:last-child td:first-child{
+    border-bottom-left-radius: .4rem;
+}
+
+
+tr td.user {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    
+    padding: 2.4rem 4rem;
+}
+
+td img {
+    width: 5.6rem;
+    border-radius: 50%;;
+}
+
+tr, tr a {
+    color: var(--tt-color);
+    text-decoration: none;
+}
+
+tr p {
+    font-weight: bold;
+    line-height: 160%;
+    font-size: 2rem;
+}
+
+.remove {
+    color: var(--tt-rmv-color);
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 160%;
+
+    background: none;
+
+    border: none;
 }
 
 .sr-only {
