@@ -15,12 +15,13 @@ html, body, input, button {
 
     --bg-body-color: hsl(0, 0%, 0%);
     --bg-td-odd: hsla(194, 64%, 6%, 0.5);
-    --bg-td-even: hsl(191, 31%, 42%);
+    --bg-td-even: hsl(191, 65%, 7%);
     --bg-btn-color: hsl(195, 91%, 25%);
     --bg-thead-color: hsl(194, 72%, 13%);
     --bg-input-color: hsl(191, 65%, 7%);
 
     --bd-table: hsl(191, 31%, 42%);
+    --bd-tr-even: hsl(191, 31%, 42%);
     
     --tt-btn-color: hsl(0, 0%, 100%);
     --tt-rmv-color: hsl(355, 91%, 66%);
@@ -80,8 +81,8 @@ table {
 
     margin-top: 8.7rem;
 
-    border: 1px solid var(--bd-table);
     border-collapse: collapse;
+    border: 1px solid var(--bd-table);
 
     overflow: hidden;
 }
@@ -115,6 +116,11 @@ table tr:last-child td:first-child{
     border-bottom-left-radius: .4rem;
 }
 
+table tr:nth-child(even) {
+    background-color: var(--bg-td-even);
+    border: 1px solid var(--bd-tr-even);
+}
+
 
 tr td.user {
     display: flex;
@@ -139,6 +145,8 @@ tr p {
     line-height: 160%;
     font-size: 2rem;
 }
+
+
 
 .remove {
     color: var(--tt-rmv-color);
