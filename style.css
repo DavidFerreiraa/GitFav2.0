@@ -19,6 +19,7 @@ html, body, input, button {
     --bg-btn-color: hsl(195, 91%, 25%);
     --bg-thead-color: hsl(194, 72%, 13%);
     --bg-input-color: hsl(191, 65%, 7%);
+    --bg-scrollbar-thumb-color: hsl(191, 31%, 42%);
 
     --bd-table: hsl(191, 31%, 42%);
     --bd-tr-even: hsl(191, 31%, 42%);
@@ -35,12 +36,16 @@ body {
     font-size: 1.6rem;
 
     background-color: var(--bg-body-color);
+
+    overflow: hidden;
 }
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    margin-bottom: 8.7rem;
 }
 
 .search-wrapper {
@@ -83,23 +88,29 @@ header {
 table {
     width: 100%;
 
-    margin-top: 8.7rem;
-
     border-collapse: collapse;
-    border: 1px solid var(--bd-table);
+}
 
-    overflow: hidden;
+.table-wrapper {
+    max-height: 60rem;
+    overflow-y: scroll;
 }
 
 table thead {
+    position: sticky;
+    top: 0;
     background-color: var(--bg-thead-color);
-
+    
     color: var(--tt-color);
     text-align: left;
 }
 
 table thead * {
     padding: 1.6rem 0rem;
+}
+
+table tbody {
+    overflow: hidden;
 }
 
 table tr:first-child th:first-child {
@@ -122,6 +133,9 @@ table tr:last-child td:first-child{
 
 table tr:nth-child(even) {
     background-color: var(--bg-td-even);
+}
+
+table tr:not(.head-tr) {
     border: 1px solid var(--bd-tr-even);
 }
 
@@ -150,8 +164,6 @@ tr p {
     font-size: 2rem;
 }
 
-
-
 .remove {
     color: var(--tt-rmv-color);
     font-weight: bold;
@@ -175,4 +187,15 @@ tr p {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+}
+
+::-webkit-scrollbar {
+    width: .6rem;
+}
+
+::-webkit-scrollbar-thumb {
+    width: .6rem;
+    background-color: var(--bg-scrollbar-thumb-color);
+
+    border-radius: 999rem;
 }
