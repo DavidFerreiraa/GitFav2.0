@@ -94,6 +94,8 @@ table {
 .table-wrapper {
     max-height: 60rem;
     overflow-y: scroll;
+    border-radius: .4rem;
+    border: 1px solid var(--bd-tr-even);
 }
 
 table thead {
